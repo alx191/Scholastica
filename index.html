@@ -750,59 +750,60 @@ care.
   </section>
 
   <!-- end info section -->
+
+          
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Four Images at Bottom</title>
+    <title>Images in a Row with Text</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
+        .image-row {
+            display: flex;
+            justify-content: space-around; /* Evenly space the images */
+            align-items: center;
+            margin-top: 20px;
         }
         .image-container {
-            text-align: center; /* Center text under image */
+            text-align: center; /* Center the text and image */
         }
         .image-container img {
-            width: 100px; /* Adjust size as needed */
+            width: 150px; /* Adjust the size of the images */
             height: auto;
+            margin-bottom: 5px; /* Space between image and text */
         }
         .image-container p {
-            margin: 5px 0 0;
-            font-size: 14px;
+            font-size: 16px;
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<!-- Main Content of the Website -->
-<div style="height: 95vh;">
-    <h1>Main Website Content</h1>
-    <p>Scroll down to see the images at the bottom.</p>
-</div>
+<h1>Images in a Row with Descriptions</h1>
 
-<!-- Bottom Row of Images -->
-<div class="bottom-row">
+<!-- Image Row -->
+<div class="image-row">
     <div class="image-container">
         <img src="us.jpg" alt="Image 1">
         <p>Image 1 Description</p>
     </div>
     <div class="image-container">
-        <img src="us.jpg" alt="Image 2">
+        <img src="image2.jpg" alt="Image 2">
         <p>Image 2 Description</p>
     </div>
     <div class="image-container">
-        <img src="us.jpg" alt="Image 3">
+        <img src="image3.jpg" alt="Image 3">
         <p>Image 3 Description</p>
     </div>
     <div class="image-container">
-        <img src="us.jpg" alt="Image 4">
+        <img src="image4.jpg" alt="Image 4">
         <p>Image 4 Description</p>
     </div>
 </div>
 
 </body>
+</html>
 
 
 
